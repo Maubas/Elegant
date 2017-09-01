@@ -1,0 +1,45 @@
+$iris: #5A458E;
+$glitter: #E3F2FD;
+$beau: #B8DBD9;
+$floral: #FBFBF2;
+$cultured: #F4F4F9;
+$moderate: #d2626e;
+
+.field {
+  label {
+    margin: 0px;
+    font-size: 11px;
+    color: $glitter;
+    background-color: $iris;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0px 10px;
+  }
+
+  input, select, textarea {
+    background: #FFF;
+    margin-top: -2px;
+    border: 0px;
+    width: 100%;
+  }
+}
+
+.actions {
+  text-align: center;
+}
+
+.picture {
+  border: 8px dashed $floral;
+  border-radius: 5px;
+  height: 545px;
+  background-color: $beau;
+}
+
+input[type="submit"] {
+  color: $floral;
+  background-color: $moderate;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px 10px;
+  font-weight: bold;
+}

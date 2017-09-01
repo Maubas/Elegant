@@ -1,0 +1,2 @@
+module GlamoursHelper
+end

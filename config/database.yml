@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+test:
+  <<: *default
+  database: elegant_test
+
+development:
+  <<: *default
+  database: elegant_development
+
+staging:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

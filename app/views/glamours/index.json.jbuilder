@@ -1,0 +1,1 @@
+json.array! @glamours, partial: 'glamours/glamour', as: :glamour

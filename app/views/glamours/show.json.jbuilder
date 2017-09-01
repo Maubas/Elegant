@@ -1,0 +1,1 @@
+json.partial! "glamours/glamour", glamour: @glamour

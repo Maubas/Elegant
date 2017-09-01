@@ -1,0 +1,2 @@
+json.extract! glamour, :id, :user_id, :character_name, :character_world, :character_class, :head, :chest, :arms, :legs, :feet, :comment, :created_at, :updated_at
+json.url glamour_url(glamour, format: :json)

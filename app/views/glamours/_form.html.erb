@@ -1,0 +1,144 @@
+<%= form_for(@glamour) do |f| %>
+  <% if @glamour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@glamour.errors.count, "error") %> prohibited this glamour from being saved:</h2>
+
+      <ul>
+      <% @glamour.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-4 picture">
+      Picture thingy here
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="field">
+        <%= f.label :character_name %><br>
+        <%= f.text_field :character_name %>
+      </div>
+      <div class="field">
+        <%= f.label :character_world %><br>
+        <%= f.select :character_world, ['Adamantoise',
+                                        'Aegis',
+                                        'Alexander',
+                                        'Anima',
+                                        'Asura',
+                                        'Atomos',
+                                        'Bahamut',
+                                        'Balmung',
+                                        'Behemoth',
+                                        'Belias',
+                                        'Brynhildr',
+                                        'Cactuar',
+                                        'Carbuncle',
+                                        'Cerberus',
+                                        'Chocobo',
+                                        'Coeurl',
+                                        'Diabolos',
+                                        'Durandal',
+                                        'Excalibur',
+                                        'Exodus',
+                                        'Faerie',
+                                        'Famfrit',
+                                        'Fenrir',
+                                        'Garuda',
+                                        'Gilgamesh',
+                                        'Goblin',
+                                        'Gungnir',
+                                        'Hades',
+                                        'Hyperion',
+                                        'Ifrit',
+                                        'Ixion',
+                                        'Jenova',
+                                        'Kujata',
+                                        'Lamia',
+                                        'Leviathan',
+                                        'Lich',
+                                        'Malboro',
+                                        'Mandragora',
+                                        'Masamune',
+                                        'Mateus',
+                                        'Midgardsormr',
+                                        'Moogle',
+                                        'Odin',
+                                        'Pandaemonium',
+                                        'Phoenix',
+                                        'Ragnarok',
+                                        'Ramuh',
+                                        'Ridill',
+                                        'Sargatanas',
+                                        'Shinryu',
+                                        'Shiva',
+                                        'Siren',
+                                        'Tiamat',
+                                        'Titan',
+                                        'Tonberry',
+                                        'Typhon',
+                                        'Ultima',
+                                        'Ultros',
+                                        'Unicorn',
+                                        'Valefor',
+                                        'Yojimbo',
+                                        'Zalera',
+                                        'Zeromus',
+                                        'Zodiark']
+        %>
+      </div>
+      <div class="field">
+        <%= f.label :character_class %><br>
+        <%= f.select :character_class, ['Astrologian',
+                                        'Bard',
+                                        'Black Mage',
+                                        'Dark Knight',
+                                        'Dragoon',
+                                        'Machinist',
+                                        'Monk',
+                                        'Ninja',
+                                        'Paladin',
+                                        'Scholar',
+                                        'Summoner',
+                                        'Warrior',
+                                        'White Mage']
+        %>
+      </div>
+      <div class="field">
+        <%= f.label :head %><br>
+        <%= f.text_field :head %>
+      </div>
+      <div class="field">
+        <%= f.label :chest %><br>
+        <%= f.text_field :chest %>
+      </div>
+      <div class="field">
+        <%= f.label :arms %><br>
+        <%= f.text_field :arms %>
+      </div>
+      <div class="field">
+        <%= f.label :legs %><br>
+        <%= f.text_field :legs %>
+      </div>
+      <div class="field">
+        <%= f.label :feet %><br>
+        <%= f.text_field :feet %>
+      </div>
+      <div class="field">
+        <%= f.label :comment %><br>
+        <%= f.text_area :comment %>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis non diam suscipit tempus eu et arcu. Integer semper odio at ligula convallis vulputate. Fusce tempus gravida rhoncus. Maecenas sit amet volutpat metus, ac scelerisque nisl. Quisque mollis vulputate magna, vitae condimentum nulla eleifend ac. In dapibus in ligula et suscipit. Proin nec felis urna.<br><br>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    </div>
+  </div>
+  <!--<div class="field">
+    <%#= f.label :user_id %><br>
+    <%#= f.number_field :user_id %>
+  </div>-->
+<% end %>

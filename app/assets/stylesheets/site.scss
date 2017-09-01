@@ -1,0 +1,35 @@
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Raleway|Trocchi';
+
+$iris: #5A458E;
+$glitter: #E3F2FD;
+$beau: #B8DBD9;
+$floral: #FBFBF2;
+$cultured: #F4F4F9;
+$moderate: #d2626e;
+
+body {
+  overflow-x: hidden;
+  background-color: $iris;
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  height: 100%;
+}
+
+.site-wrap {
+  min-width: 100%;
+  width: 100%;
+  min-height: 99vh;
+  background-color: $cultured;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 3em;
+  overflow: scroll;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Trocchi', serif;
+}

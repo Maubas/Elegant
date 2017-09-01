@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Glamours</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name</th>
+      <th>World</th>
+      <th>Class</th>
+      <th>Head</th>
+      <th>Chest</th>
+      <th>Arms</th>
+      <th>Legs</th>
+      <th>Feet</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @glamours.each do |glamour| %>
+      <tr>
+        <td><%= glamour.user_id %></td>
+        <td><%= glamour.character_name %></td>
+        <td><%= glamour.character_world %></td>
+        <td><%= glamour.character_class %></td>
+        <td><%= glamour.head %></td>
+        <td><%= glamour.chest %></td>
+        <td><%= glamour.arms %></td>
+        <td><%= glamour.legs %></td>
+        <td><%= glamour.feet %></td>
+        <td><%= glamour.comment %></td>
+        <td><%= link_to 'Show', glamour %></td>
+        <td><%= link_to 'Edit', edit_glamour_path(glamour) %></td>
+        <td><%= link_to 'Destroy', glamour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Glamour', new_glamour_path %>
